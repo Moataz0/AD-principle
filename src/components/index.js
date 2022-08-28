@@ -15,8 +15,8 @@ export {default as Content} from "./molecules/Content"
 // Organisms
 export {default as Nav} from "./organisms/Nav"
 export {default as Header} from "./organisms/Header"
+export {default as Footer} from "./organisms/Footer"
 
 // templates
 
-export {default as Footer} from "./templates/Footer"
 export {default as Home} from "./templates/Home"
