@@ -3,13 +3,13 @@ import "./style.css"
 import PropTypes from "prop-types"
 
 
-const Label = ({text}) => {
+const Label = ({text,className}) => {
   return (
-    <span>{text}</span>
+    <span className={className}>{text}</span>
   )
 }
 
-Label.prototype = {
+Label.propTypes = {
     text: PropTypes.string.isRequired
 }
 

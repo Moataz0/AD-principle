@@ -1,14 +1,23 @@
-import './App.css';
-import { Button, Footer, TextField } from './components';
-
-
+import "./App.css";
+import { Button, Footer, Header, Home, Nav, TextField } from "./components";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Routes,
+  Link,
+  BrowserRouter,
+} from "react-router-dom";
 function App() {
   return (
-    <div className="App">
-      <Button text="atom" />
-      <TextField type="text" />
-      <Footer />
-    </div>
+  
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      
+      </BrowserRouter>
+   
   );
 }
 

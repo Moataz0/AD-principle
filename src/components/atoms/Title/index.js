@@ -3,12 +3,12 @@ import "./style.css"
 import PropTypes from "prop-types"
 
 
-const Title = ({text}) => {
+const Title = ({text,className}) => {
   return (
-    <h1 className='titleStyle'>{text}</h1>
+    <h1 className={className}>{text}</h1>
   )
 }
-Title.prototype = {
+Title.propTypes = {
     text: PropTypes.string.isRequired
 }
 

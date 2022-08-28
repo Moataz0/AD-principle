@@ -1,16 +1,21 @@
-import React from 'react'
-import "./style.css"
-import PropTypes from "prop-types"
+import React from "react";
+import "./style.css";
+import PropTypes from "prop-types";
 
-
-const Button = ({text}) => {
+const Button = ({ text, disabled, className, onClick }) => {
   return (
-    <button className='button_style'>{text}</button>
-  )
-}
+    <button
+      className={`${className}`}
+      disabled={disabled}
+      onClick={onClick}
+    >
+      {text}
+    </button>
+  );
+};
 
-Button.prototype = {
-    text: PropTypes.string.isRequired
-}
+Button.propTypes = {
+  text: PropTypes.string.isRequired,
+};
 
-export default Button
+export default Button;

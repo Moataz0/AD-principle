@@ -1,9 +1,21 @@
-import React from 'react'
-
+import React from "react";
+import { Link } from "react-router-dom";
+import { Button } from "../..";
+import Label from "../../atoms/Label";
+import "./style.css";
 const Nav = ({}) => {
   return (
-    <div>Nav</div>
-  )
-}
+    <div className="navbar">
+      <div className="navContainer">
+        <Label text="travware" />
 
-export default Nav
+        <div className="navItems">
+          <Button text="Register" className="button_style"/>
+          <Button text="Login" className="button_style"/>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Nav;

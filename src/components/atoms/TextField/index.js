@@ -13,7 +13,7 @@ const TextField = ({ type, placeholder, value }) => {
   );
 };
 
-TextField.prototype = {
+TextField.propTypes = {
   text: PropTypes.string,
   type: PropTypes.string,
   placeholder: PropTypes.string,
