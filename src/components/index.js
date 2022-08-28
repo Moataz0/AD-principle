@@ -8,4 +8,6 @@ export {default as Title} from "./atoms/Title"
 // Molecules
 export {default as LabelInput} from "./molecules/LabelInput"
 
-// Pages
+// templates
+
+export {default as Footer} from "./templates/Footer"

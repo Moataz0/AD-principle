@@ -1,6 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-import { Button, TextField } from './components';
+import { Button, Footer, TextField } from './components';
 
 
 function App() {
@@ -8,6 +7,7 @@ function App() {
     <div className="App">
       <Button text="atom" />
       <TextField type="text" />
+      <Footer />
     </div>
   );
 }
